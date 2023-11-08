@@ -1,0 +1,12 @@
+{
+  "name": "sveltekit-fastify-ws-tauri-starter",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter ./frontend run build && pnpm --filter ./backend run build",
+    "tauri:build": "pnpm --filter ./frontend run tauri build",
+    "dev": "pnpm --stream -r run dev",
+    "start": "pnpm --filter ./backend run start"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "my-backend",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf build && tsx esbuild.ts",
+    "dev": "tsx watch src/app.ts",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint .",
+    "start": "node build/app.js"
+  },
+  "dependencies": {
+    "@fastify/autoload": "5.8.0",
+    "@fastify/static": "6.12.0",
+    "@fastify/websocket": "8.2.0",
+    "fastify": "4.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.9.0",
+    "@types/ws": "8.5.9",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
+    "esbuild": "0.19.5",
+    "esbuild-plugin-copy": "2.1.1",
+    "eslint": "8.53.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "prettier": "3.0.3",
+    "tiny-glob": "0.2.9",
+    "tsx": "3.14.0",
+    "typescript": "5.2.2"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
